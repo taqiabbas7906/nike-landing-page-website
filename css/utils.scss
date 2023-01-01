@@ -1,0 +1,14 @@
+.wrapper{
+    width: 1180px;
+    margin: 0 auto;
+}
+@mixin abeezee{
+    font-family: 'ABeeZee', sans-serif;
+}
+@mixin centerChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin BigFont{
+    font-family: 'Big Shoulders Display', cursive;}
