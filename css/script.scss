@@ -20,6 +20,8 @@ $primaryColor: #D9D9D9;
     background: rgba(255, 255, 255, 0.03);
     height: 80px;
     @include centerChild;
+    position: relative;
+    z-index: 99;
   }
   
   .logoImg {
@@ -30,11 +32,15 @@ $primaryColor: #D9D9D9;
     display: flex;
     width: 340px;
     li {
-        color: white;
-        font-size: 18px;
-        margin: 20px;
-        font-weight: 400;
-        @include abeezee;
+      color: white;
+      font-size: 18px;
+      margin: 20px;
+      font-weight: 400;
+      @include abeezee;
+      &:hover{
+        text-decoration: underline
+      }
+      cursor: pointer;
       }
   }
   
@@ -56,6 +62,7 @@ $primaryColor: #D9D9D9;
     @include centerChild;
     height: 40px;
     border-radius: 50%;
+    cursor:pointer;
   }
   
   .userIcon {
@@ -78,8 +85,11 @@ $primaryColor: #D9D9D9;
   .mainContainer {
     height: 800px;
     background: black;
+    transition: all .3s ease;
   }
-  
+  .mainColor{
+    transition: all .3s ease;
+  }
   .mainHeroSection {
     flex-direction: column;
     @include centerChild
@@ -94,7 +104,7 @@ $primaryColor: #D9D9D9;
     @include BigFont;
   }
   
-  .MainImgSection {
+  .mainImgSection {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -108,7 +118,13 @@ $primaryColor: #D9D9D9;
     width: 270px;
     margin-bottom: 120px;
     height: 70px;
+    cursor: pointer;
     border-radius: 50px;
+    z-index: 3;
+    border: none;
+    &:hover{
+      filter: drop-shadow(3px 0px 3px white);
+    }
   }
   
   .shoeImgSection {
@@ -119,8 +135,13 @@ $primaryColor: #D9D9D9;
         position: absolute;
         top: -200px;
         left: -130px;
+        transition: all .3s ease;
+        &:hover{
+          width: 720px;
+          filter: drop-shadow(30px 10px 4px black)
+          }
+        }
       }
-  }
   
   .shoeBackground {
     width: 530px;
@@ -176,6 +197,7 @@ $primaryColor: #D9D9D9;
     height: 138px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .moreShoesContainer { 
     .line {
@@ -191,5 +213,210 @@ $primaryColor: #D9D9D9;
     font-weight: 400;
     @include abeezee;
   }
+  .moreShoesImgs{
+    display: flex;
+  }
+  .shoe{
+    width: 160px;
+    height: 85px;
+    background: gray;
+    border: 1px solid white;
+    border-radius: 18px;
+    margin-left: 23px;
+    z-index: 3;
+    cursor: pointer;
+    &:hover{
+      border: 3px solid #0085FF;
+      img{
+        transform: rotate(-5deg)
+      }
+    }
+    @include centerChild;
+    img{
+      width: 145px;
+      transition: all .2s ease;
+      margin-bottom: 20px;
+    }
+  }
+  .af1{
+    border: 3px solid #0085FF;
+  }
+  .jordan{
+    background:#C87C18;
+  }
+  .max{
+    background: #385B7A;
+  }
+  .blazers{
+    background: #D42523;
+  }
+  /* More Shoes Section End */
   
-  /* More Shoes Section End */ /*# sourceMappingURL=script.css.map *//*# sourceMappingURL=script.css.map */
+  // Features Section Start
+  .featuresMain{
+    
+  }
+  .features{
+    margin: auto;
+    height: 270px;
+    @include centerChild;
+    justify-content: space-between;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    width: 1030px
+  }
+  .featureCircle{
+    @include centerChild;
+    flex-direction: column;
+    i{
+      font-size: 50px;
+      height: 90px;
+      width: 90px;
+     background-color: #D9D9D9;
+     border-radius: 50%;
+     margin-bottom: 15px;
+    @include centerChild;
+    }
+  }
+
+  // Features Section End
+  
+  // Buy Section Start
+  .buyMainContainer{
+    width: 100%;
+    display: flex;
+    height: 545px;
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    .secondHalf{
+      clip-path: polygon(16% 0, 0% 100%, 100% 100%, 100% 0%);
+      background-color: #D9D9D9;
+      width: 100%;
+      position: absolute;
+      left: 40%;
+      height: 545px;
+    }
+    img{
+      position: absolute;
+      width: 500px;
+      bottom: -50px;
+    }
+  }
+  .buyContainer{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    .buySection{
+      width: 50%;
+      height: 100%;
+    }
+  }
+  .buyShoeName{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 380px;
+    font-weight: 700;
+    transform: rotate(-12.6deg);
+    @include BigFont;
+  }
+  .rightBuySection{
+    z-index: 3;
+    margin-left: 30px;
+    @include centerChild;
+    flex-direction: column;
+    .buyHeading{
+      font-size: 75px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-align: center;
+      position: relative;
+      @include BigFont;
+      margin: 20px 0 20px 100px;
+    }
+  }
+  .pullTag{
+    height: 75px;
+    width: 100px;
+    position: absolute;
+    right: 150px;
+    z-index: -4;
+    display: inline-block;
+    background-color: white;
+  }
+  .buyOptions{
+    z-index: 3;
+    @include BigFont;
+    font-weight:700;
+    font-size: 24px;
+    .size{
+      display: flex;
+      @include centerChild;
+      justify-content: space-between;
+      align-items: center;
+      &:nth-child(2){
+        margin-left: 30px;
+      }
+    }
+    .Heading{
+      padding: 25px;
+      font-size: 32px;
+    }
+    .sizeOption{
+      @include centerChild;
+      width: 60px;
+      height: 40px;
+      background-color: white;
+      text-align: center;
+      border-radius: 10px;
+      margin-right: 30px;
+      
+    }
+  }
+  .color{
+    display: flex;
+    align-items: center;
+  }
+  .colorOption{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: white;
+    &.black{
+      background-color: black;
+    }
+  }
+
+  .amount{
+    display: flex;
+    align-items: center;
+    .amountOption{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 135px;
+      height: 50px;
+      background-color: white;
+      border-radius: 20px;
+      font-size: 32px;
+      span{
+        margin: 0 10px;
+      }
+    }
+  }
+  .cartBtn{
+    width: 540px;
+    height: 95px;
+    background-color: #FF5353;
+    border: none;
+    font-size: 40px;
+    @include BigFont;
+    font-weight:800;
+    border-radius: 20px;
+  }
+  // Buy Section End
+  
+  
+  /*# sourceMappingURL=script.css.map *//*# sourceMappingURL=script.css.map */

@@ -1,77 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/script.css" />
-    <link rel="stylesheet" href="css/utils.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Nike | Just Do It | Nike Landing Page</title>
-  </head>
 
-  <body>
-    <!-- Navbar Start -->
-    <div class="mainContainer">
-      <div class="navContainer">
-        <div class="wrapper">
-          <nav>
-            <div class="navLeft">
-              <img class="logoImg" src="img/logo.png" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/script.css" />
+  <link rel="stylesheet" href="css/utils.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <title>Nike | Just Do It | Nike Landing Page</title>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <div class="mainContainer">
+    <div class="navContainer">
+      <div class="wrapper">
+        <nav>
+          <div class="navLeft">
+            <img class="logoImg" src="img/logo.png" alt="logo" />
+          </div>
+          <ul class="navCenter">
+            <li id="">Home</li>
+            <li id="">Shoes</li>
+            <li id="">About</li>
+            <li id="">Contact</li>
+          </ul>
+          <div class="navRight">
+            <div class="navCircle userIcon">
+              <img src="img/usericon.png" alt="" />
             </div>
-            <ul class="navCenter">
-              <li id="">Home</li>
-              <li id="">Shoes</li>
-              <li id="">About</li>
-              <li id="">Contact</li>
-            </ul>
-            <div class="navRight">
-              <div class="navCircle userIcon">
-                <img src="img/usericon.png" alt="" />
-              </div>
-              <div class="navCircle bagIcon">
-                <img src="img/bagicon.png" alt="" />
-              </div>
+            <div class="navCircle bagIcon">
+              <img src="img/bagicon.png" alt="" />
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
-      <!-- Navbar End -->
-      <!-- Hero Section Start -->
-      <div class="mainHeroSection">
+    </div>
+    <!-- Navbar End -->
+    <!-- Hero Section Start -->
+    <div class="mainHeroSection">
+      <div class="wrapper">
+        <section class="heroSection">
+          <div class="backgroundText">NIKE</div>
+          <div class="mainImgSection">
+            <button class="buyNow mainColor">BUY NOW</button>
+            <div class="shoeImgSection">
+              <div class="shoeBackground mainColor"></div>
+              <img src="img/nike af1.png" alt="" class="shoeImg" />
+            </div>
+            <div class="rightSection">
+              <div class="shoeName">
+                <span class="firstName">Nike Air</span><span class="secondName">Force 1</span>
+              </div>
+              <div class="shoePrice mainColor">
+                <span class="firstPrice">200$</span><span class="secondPrice">99$</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="moreShoesContainer">
+        <div class="line"></div>
         <div class="wrapper">
-          <div class="heroSection">
-            <div class="backgroundText">NIKE</div>
-            <div class="MainImgSection">
-              <button class="buyNow">BUY NOW</button>
-              <div class="shoeImgSection">
-                <div class="shoeBackground"></div>
-                <img src="img/nike_af1.png" alt="" class="shoeImg" />
+          <div class="mainMoreShoesSection">
+            <div class="moreShoesText abeezee">Select Shoe ></div>
+            <div class="moreShoesImgs">
+              <div class="af1 shoe">
+                <img src="/img/nike af1.png" alt="" />
               </div>
-              <div class="rightSection">
-                <div class="shoeName">
-                  <span>Nike Air</span><span>Force 1</span>
-                </div>
-                <div class="shoePrice"><span>200$</span><span>99$</span></div>
+              <div class="blazers shoe">
+                <img src="/img/nike blazers.png" alt="" />
+              </div>
+              <div class="jordan shoe">
+                <img src="/img/nike aj.png" alt="" />
+              </div>
+              <div class="max shoe">
+                <img src="/img/nike am1.png" alt="" />
               </div>
             </div>
           </div>
-        </div>
-        <div class="moreShoesContainer">
-          <div class="line"></div>
-          <div class="wrapper">
-            <div class="mainMoreShoesSection">
-              <div class="moreShoesText abeezee">More Shoes ></div>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
+    <!-- Hero Section End -->
+  </div>
+  <!-- Features Section Start -->
+  <div class="featuresMain">
+    <div class="wrapper">
+      <section class="features">
+        <div class="featureCircle"><i class="fa-solid fa-truck-fast featureIcons"></i>Fast Delivery</div>
+        <div class="featureCircle"><i class="fa-solid fa-handshake-angle featureIcons"></i>30 Days Return</div>
+        <div class="featureCircle"><i class="fa-solid fa-money-bill featureIcons"></i>Free Vouchers</div>
+        <div class="featureCircle"><i class="fa-solid fa-headphones fea"></i>24/7 Chat Support</div>
+
+      </section>
+    </div>
+  </div>
+  <!-- Features Section End -->
+  <!-- Buy Section Start -->
+  <div class="buyMainContainer">
+    <div class="wrapper">
+      <div class="buyContainer">
+        <div class="leftBuySection buySection">
+          <div class="buyShoeName">AF1</div>
+          <img class="buyShoeImg" src="img/nike af1.png" alt="">
+        </div>
+        <div class="rightBuySection buySection">
+          <div class="buyHeading">    Nike Air Force 1</div>
+          <div class="buyOptions">
+            <div class="size">
+              <div class="sizeHeading Heading">Size</div>
+              <div class="sizeOption s">S</div>
+              <div class="sizeOption m">M</div>
+              <div class="sizeOption l">L</div>
+              <div class="sizeOption xl">XL</div>
+            </div>
+            <div class="color">
+              <div class="colorHeading Heading">Color</div>
+              <div class="colorOption white"></div>
+              <div class="colorOption black"></div>
+            </div>
+            <div class="amount">
+              <div class="amountHeading Heading">Amount</div>
+              <div class="amountOption">
+                <span>+</span>
+                <div class="amountInput">2</div>
+                <span>-</span>
+              </div>
+            </div>
+          </div>
+          <button class="cartBtn">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="secondHalf"></div>
+    <!-- Buy Section Start -->
     <script src="js/script.js"></script>
-  </body>
+    <script src="https://kit.fontawesome.com/da91f048d7.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
