@@ -4,7 +4,6 @@ $bodyColor:white;
 $cartColor: #FF5353;
 $imgDropShadow : drop-shadow(30rem 10rem 4rem black);
 $footerTextColor :rgb(192, 192, 192);
-$boxShadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
 @import 'utils';
 * {
     margin: 0;
@@ -503,7 +502,7 @@ $boxShadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
       object-fit: cover;
       border-radius: 25rem;
       margin: 25rem;
-      box-shadow: $boxShadow;
+      box-shadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
     }
   }
   .gallerySection2{
@@ -516,7 +515,7 @@ $boxShadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
         height: 640rem;
         border-radius: 25rem;
         margin: 25rem;
-        box-shadow: $boxShadow;
+        box-shadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
       }
   }
 }
@@ -574,7 +573,7 @@ $boxShadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
       font-size: 15rem;
       margin: 10rem;
       font-weight: 400;
-      color: $rgb(192, 192, 192);
+      color: rgb(192, 192, 192);
     }
   }
   .followFooter{
