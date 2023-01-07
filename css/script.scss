@@ -1,5 +1,10 @@
 $primaryColor: #303234;
 $secondaryColor: #D9D9D9;
+$bodyColor:white;
+$cartColor: #FF5353;
+$imgDropShadow : drop-shadow(30rem 10rem 4rem black);
+$footerTextColor :rgb(192, 192, 192);
+$boxShadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
 @import 'utils';
 * {
     margin: 0;
@@ -84,7 +89,7 @@ $secondaryColor: #D9D9D9;
     }
   }
   .bagIcon {
-    background-color: #FF5353;  
+    background-color: $cartColor;  
   }
   .navBtn{
     display: none;
@@ -231,7 +236,7 @@ $secondaryColor: #D9D9D9;
   .shoe{
     width: 160rem;
     height: 85rem;
-    background: gray;
+    background: $primaryColor;
     border: 1rem solid white;
     border-radius: 18rem;
     margin-left: 23rem;
@@ -498,7 +503,7 @@ $secondaryColor: #D9D9D9;
       object-fit: cover;
       border-radius: 25rem;
       margin: 25rem;
-      box-shadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
+      box-shadow: $boxShadow;
     }
   }
   .gallerySection2{
@@ -511,15 +516,11 @@ $secondaryColor: #D9D9D9;
         height: 640rem;
         border-radius: 25rem;
         margin: 25rem;
-        box-shadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
+        box-shadow: $boxShadow;
       }
   }
 }
   // Gallery Section End
-
-  // Newsletter Section Start
-
-  // Newsletter Section End
   
   // Footer Section Start
 
@@ -545,7 +546,7 @@ $secondaryColor: #D9D9D9;
     grid-column-end: 4;
   }
   .footerInfoText{
-    color: rgb(192, 192, 192);
+    color: $footerTextColor;
     font-size: 15rem;
     @include abeezee;
     margin-top: 30rem;
@@ -573,7 +574,7 @@ $secondaryColor: #D9D9D9;
       font-size: 15rem;
       margin: 10rem;
       font-weight: 400;
-      color: rgb(192, 192, 192);
+      color: $rgb(192, 192, 192);
     }
   }
   .followFooter{
@@ -591,7 +592,7 @@ $secondaryColor: #D9D9D9;
   .fa-brands{
     font-size: 25rem;
     margin: 5rem;
-    color: rgb(192, 192, 192);
+    color: $footerTextColor;
   }
   // Footer Section Start
   /*# sourceMappingURL=script.css.map *//*# sourceMappingURL=script.css.map */
