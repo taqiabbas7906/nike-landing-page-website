@@ -144,6 +144,7 @@
   .buyMainContainer {
     height: 545rem;
     position: relative;
+    overflow-x: hidden;
   }
   .buyMainContainer img {
     width: 360rem;
