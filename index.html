@@ -12,46 +12,55 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Baloo+Da+2&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <title>Nike | Just Do It | Nike Landing Page</title>
 </head>
 
 <body>
   <!-- Navbar Start -->
   <div class="mainContainer">
-    <div class="navContainer">
+    <div class="navContainer container">
       <div class="wrapper">
+      <div class="navMain">
+        <div class="navLeft">
+          <img class="logoImg" src="img/logo.png" alt="logo" />
+        </div>
         <nav>
-          <div class="navLeft">
-            <img class="logoImg" src="img/logo.png" alt="logo" />
-          </div>
           <ul class="navCenter">
-            <li id="">Home</li>
-            <li id="">Shoes</li>
-            <li id="">About</li>
-            <li id="">Contact</li>
+            <li id="" aria-hidden="true">Home</li>
+            <li id="" aria-hidden="true">Shoes</li>
+            <li id="" aria-hidden="true">Buy Shoe</li>
+            <li id="" aria-hidden="true">Gallery</li>
           </ul>
-          <div class="navRight">
-            <div class="navCircle userIcon">
-              <img src="img/usericon.png" alt="" />
-            </div>
-            <div class="navCircle bagIcon">
-              <img src="img/bagicon.png" alt="" />
-            </div>
-          </div>
         </nav>
+        <div class="navRight">
+          <div class="navCircle userIcon">
+            <img src="img/usericon.png" alt="" />
+          </div>
+          <div class="navCircle bagIcon">
+            <img src="img/bagicon.png" alt="" />
+          </div>
+          <div class="navCircle navBtn">
+            <img src="img/Hamburger_icon.svg.png" alt="" />
+          </div>
+        </div>
+      </div>
       </div>
     </div>
     <!-- Navbar End -->
+    <main>
     <!-- Hero Section Start -->
-    <div class="mainHeroSection">
+    <div class="mainHeroSection container">
       <div class="wrapper">
         <section class="heroSection">
           <div class="backgroundText">NIKE</div>
           <div class="mainImgSection">
-            <button class="buyNow mainColor">BUY NOW</button>
+            <a href="#buyContainer" class="buyNow mainColor">BUY NOW</a>
             <div class="shoeImgSection">
               <div class="shoeBackground mainColor"></div>
               <img src="img/nike af1.png" alt="" class="shoeImg" />
@@ -66,22 +75,22 @@
             </div>
           </div>
       </div>
-      <div class="moreShoesContainer">
+      <div class="moreShoesContainer container">
         <div class="line"></div>
         <div class="wrapper">
           <div class="mainMoreShoesSection">
             <div class="moreShoesText abeezee">Select Shoe ></div>
             <div class="moreShoesImgs">
-              <div class="af1 shoe">
+              <div class="af1 shoe selected" id="0">
                 <img src="/img/nike af1.png" alt="" />
               </div>
-              <div class="blazers shoe">
+              <div class="blazers shoe" id="1">
                 <img src="/img/nike blazers.png" alt="" />
               </div>
-              <div class="jordan shoe">
+              <div class="jordan shoe" id="2">
                 <img src="/img/nike aj.png" alt="" />
               </div>
-              <div class="max shoe">
+              <div class="max shoe" id="3">
                 <img src="/img/nike am1.png" alt="" />
               </div>
             </div>
@@ -93,7 +102,7 @@
     <!-- Hero Section End -->
   </div>
   <!-- Features Section Start -->
-  <div class="featuresMain">
+  <div class="featuresMain container">
     <div class="wrapper">
       <section class="features">
         <div class="featureCircle"><i class="fa-solid fa-truck-fast featureIcons"></i>Fast Delivery</div>
@@ -106,43 +115,93 @@
   </div>
   <!-- Features Section End -->
   <!-- Buy Section Start -->
-  <div class="buyMainContainer">
+  <div id="buyContainer" class="buyMainContainer container">
     <div class="wrapper">
-      <div class="buyContainer">
+      <section class="buyContainer">
         <div class="leftBuySection buySection">
           <div class="buyShoeName">AF1</div>
           <img class="buyShoeImg" src="img/nike af1.png" alt="">
         </div>
         <div class="rightBuySection buySection">
-          <div class="buyHeading">    Nike Air Force 1</div>
+          <h1 class="buyHeading">Nike Air Force 1</h1>
           <div class="buyOptions">
             <div class="size">
               <div class="sizeHeading Heading">Size</div>
               <div class="sizeOption s">S</div>
-              <div class="sizeOption m">M</div>
+              <div class="sizeOption m selected">M</div>
               <div class="sizeOption l">L</div>
               <div class="sizeOption xl">XL</div>
             </div>
             <div class="color">
               <div class="colorHeading Heading">Color</div>
-              <div class="colorOption white"></div>
+              <div class="colorOption white selected"></div>
               <div class="colorOption black"></div>
             </div>
             <div class="amount">
               <div class="amountHeading Heading">Amount</div>
               <div class="amountOption">
                 <span>+</span>
-                <div class="amountInput">2</div>
+                <div class="amountInput">1</div>
                 <span>-</span>
               </div>
             </div>
           </div>
           <button class="cartBtn">Add To Cart</button>
         </div>
-      </div>
+      </section>
     </div>
     <div class="secondHalf"></div>
-    <!-- Buy Section Start -->
+    <!-- Buy Section End -->
+  </div>
+  <!-- Gallery Section Start -->
+  <div class="galleryMainContainer container">
+    <div class="galleryHeading">
+      <div class="wrapper">
+        <section class="gallerySection">
+          <h1 class="galleryHeadingText"><img src="img/logo.png" alt=""> Nike Gallery</h1>
+          <div class="gallerySection1">
+            <div class="leftGallerySection">
+              <h3 class="gallerySubHeading">Just Do It!</h3>
+              <p class="galleryParagraph">Lörem ipsum burkini hubor ifall valäll, fast miven tena, ett nyr: deska
+                tira: nint. Hbt spelig prektig dire. Rejönerat smartboard teraligen anän. Vaska derade i askapet derat.
+                Mispes ontotet pant om vogt nyl. Lyna sunar länent, reajök kronde. Semivis trespesk, lunde ol iment: för
+                att jösm inte blåbrun teranera emmeter i hypoment nir. Multinde teraren, fassa i relisk, faposat.
+                Kontragt vask oaktat sporta en mytototal dektig, misade polig syd reliskapet. Gagt servicebarn oaktat
+                alingar polynde are kanade om än män, gurlesk.</p>
+            </div>
+            <div class="rightGallerySection"><img src="img/gallery1.jpg" alt="" class="firstGalleryImg galleryImg"></div>
+          </div>
+          <div class="gallerySection2">
+            <div class="leftGallerySection">
+              <h3 class="gallerySubHeading">Wear Your Fashion!</h3>
+              <p class="galleryParagraph">Lörem ipsum burkini hubor ifall valäll, fast miven tena, ett nyr: deska
+                tira: nint. Hbt spelig prektig dire. Rejönerat smartboard teraligen anän. Vaska derade i askapet derat.
+                Mispes ontotet pant om vogt nyl. Lyna sunar länent, reajök kronde. Semivis trespesk, lunde ol iment: för
+                att jösm inte blåbrun teranera emmeter i hypoment nir. Multinde teraren, fassa i relisk, faposat.
+                Kontragt vask oaktat sporta en mytototal dektig, misade polig syd reliskapet. Gagt servicebarn oaktat
+                alingar polynde are kanade om än män, gurlesk.</p>
+              </div>
+              <div class="rightGallerySection"><img src="img/gallery 2.jpg" alt="" class="secondGalleryImg galleryImg"></div>
+        </div>
+      </section>
+    </div>
+    <!-- Gallery Section End -->
+  </main>
+  <div class="footerMainContainer container">
+    <div class="wrapper"><footer><div class="footerInfoContainer"><div class="footerInfo"><div class="footerLogo"><img src="img/logo.png" alt=""></div><div class="footerInfoText">Lörem ipsum prektig kymöra hong. Dov lajänat då hejaklacksjournalistik närvaropeng. Mikrosk sonera. Sperade pomäktig kanat. Gynade prejände, kis biovögt. Daporade sykrorat nynde.</div> </div>
+      <div class="footerMeet"><div class="meetHeading">Meet Nike</div><span class="meetItems">Nike Air Force 1</span><span class="meetItems">Nike Blazers</span><span class="meetItems">Nike Air Jordan</span><span class="meetItems">Nike Air Max</span><span class="meetItems">Contact Us</span><span class="meetItems">About Us</span></div>
+      <div class="followFooter"><div class="followHeading">Follow</div>
+      <div class="followIcons">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+    </div>
+  </div>
+  <div class="copyright footerInfoText">© Under Syed Taqi Abbas</div>
+    </footer></div>
+  </div>
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/da91f048d7.js" crossorigin="anonymous"></script>
 </body>

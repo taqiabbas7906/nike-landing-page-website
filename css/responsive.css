@@ -1,0 +1,327 @@
+.wrapper {
+  width: 1180rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 5%;
+    overflow-x: none;
+  }
+  .mainContainer {
+    height: 890rem;
+    overflow: hidden;
+  }
+  .wrapper {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+  }
+  .navContainer {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.966);
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navContainer .navMain {
+    align-items: center;
+    width: 90vw;
+  }
+  .navContainer .navCenter {
+    position: fixed;
+    left: 100vw;
+    top: 80rem;
+    transition: all 0.3s ease;
+    width: 100vw;
+    height: 2000vw;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.911);
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(5rem);
+            backdrop-filter: blur(5rem);
+  }
+  .navContainer .navCenter li {
+    font-size: 20rem;
+    text-align: center;
+    margin: 0;
+    width: 80vw;
+    padding: 30rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.11);
+    border-top: 1rem solid rgba(255, 255, 255, 0.11);
+  }
+  .navContainer .navCenter li:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+    text-decoration: none;
+  }
+  .navContainer.active .navCenter {
+    left: 0;
+  }
+  .navBtn {
+    display: flex;
+  }
+  .backgroundText {
+    font-size: 300rem;
+  }
+  .shoeImgSection {
+    scale: 0.6;
+  }
+  .mainImgSection {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .shoeName span {
+    font-size: 60rem;
+  }
+  .shoePrice {
+    width: 120rem;
+    height: 120rem;
+    position: absolute;
+    right: 5vw;
+    top: 430rem;
+  }
+  .shoePrice span {
+    font-size: 40rem;
+  }
+  .buyNow {
+    font-size: 30rem;
+    width: 170rem;
+    height: 65rem;
+    margin-bottom: 0;
+    position: absolute;
+    left: 2vw;
+    top: 550rem;
+  }
+  .rightSection {
+    gap: 100rem;
+    margin-top: 90rem;
+  }
+  .shoeBackground {
+    top: -160rem;
+  }
+  .shoeImgSection .shoeImg {
+    top: -400rem;
+  }
+  .mainMoreShoesSection {
+    height: -10rem;
+    flex-wrap: wrap;
+  }
+  .moreShoesText {
+    display: none;
+  }
+  .shoe {
+    width: 180rem;
+    height: 80rem;
+    border-radius: 10rem;
+    margin: 10rem;
+  }
+  .shoe img {
+    width: 125rem;
+    margin-bottom: 15rem;
+    overflow: hidden;
+  }
+  .moreShoesContainer .line {
+    border: 0.5rem solid white;
+    margin-top: -70rem;
+  }
+  .moreShoesImgs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .features {
+    margin: 25rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50rem;
+  }
+  .buyContainer {
+    flex-direction: column;
+  }
+  .buyMainContainer {
+    height: 545rem;
+    position: relative;
+  }
+  .buyMainContainer img {
+    width: 360rem;
+    left: 10vw;
+  }
+  .secondHalf {
+    display: none;
+  }
+  .buyContainer .buySection {
+    width: 100vw;
+  }
+  .rightBuySection .buyHeading {
+    font-size: 58rem;
+    color: white;
+  }
+  .rightBuySection {
+    margin-left: 0;
+  }
+  .rightBuySection .buyOptions {
+    margin: 20rem;
+  }
+  .buyMainContainer img {
+    width: 366rem;
+  }
+  .buyMainContainer {
+    height: 630rem;
+  }
+  .wrapper {
+    width: 100vw;
+  }
+  .rightBuySection .buyHeading {
+    font-size: 50rem;
+  }
+  .Heading {
+    color: White;
+    margin: 0;
+  }
+  .buyMainContainer img {
+    bottom: 320rem;
+  }
+  .cartBtn {
+    width: 340rem;
+    height: 85rem;
+    border-radius: 15rem;
+    margin-bottom: 10rem;
+  }
+  .galleryHeading {
+    height: 125rem;
+    width: 100vw;
+  }
+  .galleryHeading .galleryHeadingText {
+    font-size: 60rem;
+    height: 125rem;
+  }
+  .gallerySection1 {
+    width: 100vw;
+    flex-direction: column-reverse;
+  }
+  .gallerySection1 .leftGallerySection {
+    width: 100%;
+  }
+  .gallerySection1 .leftGallerySection .galleryParagraph {
+    font-size: 18rem;
+    line-height: 45rem;
+    margin: 5rem;
+    width: 90vw;
+  }
+  .gallerySection1 .rightGallerySection {
+    overflow-x: hidden;
+  }
+  .gallerySection1 .rightGallerySection .firstGalleryImg {
+    width: 100vw;
+    height: 195rem;
+    margin: 0;
+    position: relative;
+    right: -50rem;
+  }
+  .gallerySection2 {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .gallerySection2 .leftGallerySection {
+    width: 100%;
+  }
+  .gallerySection2 .leftGallerySection .galleryParagraph {
+    font-size: 18rem;
+    line-height: 45rem;
+    margin: 5rem;
+    width: 90vw;
+  }
+  .gallerySection2 {
+    flex-direction: column-reverse;
+  }
+  .gallerySection2 .rightGallerySection .secondGalleryImg {
+    width: 100vw;
+    height: 195rem;
+    margin: 0;
+    border-radius: 25rem;
+    box-shadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: -50rem;
+  }
+  .footerMainContainer {
+    width: 100vw;
+    height: 150vw;
+  }
+  footer {
+    display: flex;
+    margin-top: 20rem;
+    flex-direction: column;
+  }
+  footer .footerInfoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 130vw;
+    gap: 30rem;
+    align-items: stretch;
+    justify-content: center;
+  }
+  footer .footerMeet {
+    align-content: center;
+  }
+  .copyright {
+    margin: 0;
+  }
+  .footerInfo {
+    width: 70vw;
+    justify-content: center;
+  }
+  .footerMeet {
+    width: 70vw;
+    height: 200rem;
+    margin: none;
+    margin-top: 30rem;
+  }
+  .followFooter {
+    width: 70vw;
+    height: 120rem;
+  }
+  .footerInfoText {
+    font-size: 18rem;
+    text-align: center;
+  }
+  .footerLogo {
+    justify-content: center;
+    display: flex;
+  }
+  .fa-brands {
+    font-size: 30rem;
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 1200px) {
+  html {
+    font-size: 4.5%;
+  }
+}
+@media screen and (max-width: 880px) and (min-width: 680px) {
+  html {
+    font-size: 3.5%;
+  }
+  .wrapper {
+    width: 85vw;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 680px) {
+  html {
+    font-size: 2.5%;
+  }
+  .wrapper {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  html {
+    font-size: 7%;
+  }
+}
+@media screen and (min-width: 3840px) {
+  html {
+    font-size: 13%;
+  }
+}/*# sourceMappingURL=responsive.css.map */

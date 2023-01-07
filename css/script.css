@@ -1,5 +1,5 @@
 .wrapper {
-  width: 1180px;
+  width: 1180rem;
   margin: 0 auto;
 }
 
@@ -8,20 +8,29 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 html {
   overflow-x: hidden;
+  font-size: 6.25%;
+  scroll-behavior: smooth;
 }
 
 body {
+  width: 100vw;
+  position: relative;
+  height: calc(100vh - 460rem);
   background-color: white;
 }
 
 /* Navbar Start */
 .navContainer {
-  background: rgba(255, 255, 255, 0.03);
-  height: 80px;
+  background: rgba(0, 0, 0, 0.911);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
+  height: 80rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,18 +38,25 @@ body {
   z-index: 99;
 }
 
+.navMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .logoImg {
-  width: 80px;
+  width: 80rem;
 }
 
 .navCenter {
   display: flex;
-  width: 340px;
+  width: 340rem;
+  justify-content: space-between;
 }
 .navCenter li {
   color: white;
-  font-size: 18px;
-  margin: 20px;
+  font-size: 18rem;
   font-weight: 400;
   font-family: "ABeeZee", sans-serif;
   cursor: pointer;
@@ -52,45 +68,43 @@ body {
 nav {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-between;
 }
 
 .navRight {
   display: flex;
-  width: 90px;
+  align-items: center;
+  gap: 10rem;
   justify-content: space-between;
 }
 
 .navCircle {
-  width: 40px;
+  width: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 40rem;
   border-radius: 50%;
+  background-color: white;
   cursor: pointer;
 }
-
-.userIcon {
-  background-color: white;
-}
-.userIcon img {
-  width: 30px;
+.navCircle img {
+  width: 30rem;
 }
 
 .bagIcon {
   background-color: #FF5353;
 }
-.bagIcon img {
-  width: 30px;
+
+.navBtn {
+  display: none;
 }
 
 /* Navbar End */
 /* Hero Section Start */
 .mainContainer {
-  height: 800px;
-  background: black;
+  height: 800rem;
+  background: #303234;
   transition: all 0.3s ease;
 }
 
@@ -108,7 +122,7 @@ nav {
 .backgroundText {
   position: absolute;
   color: rgba(255, 255, 255, 0.08);
-  font-size: 380px;
+  font-size: 380rem;
   font-weight: 700;
   transform: rotate(-12.6deg);
   font-family: "Big Shoulders Display", cursive;
@@ -121,50 +135,53 @@ nav {
 }
 
 .buyNow {
-  font-size: 40px;
+  font-size: 40rem;
   font-family: "Bitter";
   font-weight: 800;
   background-color: #D9D9D9;
-  width: 270px;
-  margin-bottom: 120px;
-  height: 70px;
+  width: 270rem;
+  margin-bottom: 120rem;
+  height: 70rem;
   cursor: pointer;
-  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rem;
   z-index: 3;
   border: none;
 }
 .buyNow:hover {
-  filter: drop-shadow(3px 0px 3px white);
+  filter: drop-shadow(3rem 0rem 3rem white);
 }
 
 .shoeImgSection {
   position: relative;
 }
 .shoeImgSection .shoeImg {
-  width: 700px;
+  width: 700rem;
   transform: rotate(-16.27deg);
   position: absolute;
-  top: -200px;
-  left: -130px;
+  top: -200rem;
+  left: -130rem;
   transition: all 0.3s ease;
 }
 .shoeImgSection .shoeImg:hover {
-  width: 720px;
-  filter: drop-shadow(30px 10px 4px black);
+  width: 720rem;
+  filter: drop-shadow(30rem 10rem 4rem black);
 }
 
 .shoeBackground {
-  width: 530px;
-  height: 530px;
+  width: 530rem;
+  height: 530rem;
   border-radius: 50%;
   background-color: #D9D9D9;
   position: relative;
-  top: 20px;
+  top: 20rem;
 }
 
 .rightSection {
   flex-direction: column;
-  margin-top: 10px;
+  gap: 10rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,22 +192,22 @@ nav {
   flex-direction: column;
 }
 .shoeName span {
-  font-size: 85px;
+  font-size: 85rem;
   font-weight: 800;
   text-decoration: underline;
   color: white;
-  letter-spacing: 4px;
+  letter-spacing: 4rem;
   text-align: center;
   font-family: "Big Shoulders Display", cursive;
 }
 
 .shoePrice {
-  width: 160px;
-  height: 160px;
+  width: 160rem;
+  height: 160rem;
   border-radius: 50%;
   flex-direction: column;
   background-color: #D9D9D9;
-  margin-top: 80px;
+  margin-top: 80rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,8 +216,8 @@ nav {
   text-decoration: line-through;
 }
 .shoePrice span {
-  color: #1f1f1f;
-  font-size: 50px;
+  color: #000000;
+  font-size: 50rem;
   font-weight: 700;
   font-family: "Blinker";
 }
@@ -208,7 +225,7 @@ nav {
 /* Hero Section End */
 /* More Shoes Section Start */
 .mainMoreShoesSection {
-  height: 138px;
+  height: 138rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -216,13 +233,13 @@ nav {
 
 .moreShoesContainer .line {
   width: 100vw;
-  border: 1px solid white;
-  margin-top: 50px;
+  border: 1rem solid white;
+  margin-top: 50rem;
 }
 
 .moreShoesText {
   color: white;
-  font-size: 25px;
+  font-size: 25rem;
   font-weight: 400;
   font-family: "ABeeZee", sans-serif;
 }
@@ -232,12 +249,12 @@ nav {
 }
 
 .shoe {
-  width: 160px;
-  height: 85px;
+  width: 160rem;
+  height: 85rem;
   background: gray;
-  border: 1px solid white;
-  border-radius: 18px;
-  margin-left: 23px;
+  border: 1rem solid white;
+  border-radius: 18rem;
+  margin-left: 23rem;
   z-index: 3;
   cursor: pointer;
   display: flex;
@@ -245,19 +262,15 @@ nav {
   align-items: center;
 }
 .shoe:hover {
-  border: 3px solid #0085FF;
+  border: 3rem solid #0085FF;
 }
 .shoe:hover img {
   transform: rotate(-5deg);
 }
 .shoe img {
-  width: 145px;
+  width: 145rem;
   transition: all 0.2s ease;
-  margin-bottom: 20px;
-}
-
-.af1 {
-  border: 3px solid #0085FF;
+  margin-bottom: 20rem;
 }
 
 .jordan {
@@ -273,17 +286,21 @@ nav {
 }
 
 /* More Shoes Section End */
+.featuresMain {
+  width: 100%;
+}
+
 .features {
   margin: auto;
-  height: 270px;
+  height: 270rem;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   font-family: "Inter";
   font-weight: 400;
-  font-size: 20px;
-  width: 1030px;
+  font-size: 20rem;
+  width: 1030rem;
 }
 
 .featureCircle {
@@ -293,12 +310,12 @@ nav {
   flex-direction: column;
 }
 .featureCircle i {
-  font-size: 50px;
-  height: 90px;
-  width: 90px;
+  font-size: 50rem;
+  height: 90rem;
+  width: 90rem;
   background-color: #D9D9D9;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,24 +324,24 @@ nav {
 .buyMainContainer {
   width: 100%;
   display: flex;
-  height: 545px;
+  height: 545rem;
   position: relative;
-  background-color: black;
+  background-color: #303234;
   justify-content: center;
 }
 .buyMainContainer .secondHalf {
   -webkit-clip-path: polygon(16% 0, 0% 100%, 100% 100%, 100% 0%);
           clip-path: polygon(16% 0, 0% 100%, 100% 100%, 100% 0%);
   background-color: #D9D9D9;
-  width: 100%;
+  width: 60%;
   position: absolute;
   left: 40%;
-  height: 545px;
+  height: 545rem;
 }
 .buyMainContainer img {
   position: absolute;
-  width: 500px;
-  bottom: -50px;
+  width: 500rem;
+  bottom: -50rem;
 }
 
 .buyContainer {
@@ -340,7 +357,7 @@ nav {
 .buyShoeName {
   position: absolute;
   color: rgba(255, 255, 255, 0.08);
-  font-size: 380px;
+  font-size: 380rem;
   font-weight: 700;
   transform: rotate(-12.6deg);
   font-family: "Big Shoulders Display", cursive;
@@ -348,75 +365,71 @@ nav {
 
 .rightBuySection {
   z-index: 3;
-  margin-left: 30px;
+  margin-left: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .rightBuySection .buyHeading {
-  font-size: 75px;
+  font-size: 85rem;
   font-weight: 800;
-  letter-spacing: 4px;
+  letter-spacing: 4rem;
   text-align: center;
   position: relative;
   font-family: "Big Shoulders Display", cursive;
-  margin: 20px 0 20px 100px;
-}
-
-.pullTag {
-  height: 75px;
-  width: 100px;
-  position: absolute;
-  right: 150px;
-  z-index: -4;
-  display: inline-block;
-  background-color: white;
 }
 
 .buyOptions {
   z-index: 3;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
-  font-size: 24px;
+  display: grid;
+  grid-template-rows: repeat(3, 70rem);
+  row-gap: 5rem;
+  font-size: 24rem;
+  margin: 30rem;
 }
 .buyOptions .size {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 60rem);
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.Heading {
+  font-size: 32rem;
+}
+
+.sizeOption {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  align-items: center;
-}
-.buyOptions .size:nth-child(2) {
-  margin-left: 30px;
-}
-.buyOptions .Heading {
-  padding: 25px;
-  font-size: 32px;
-}
-.buyOptions .sizeOption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 40px;
+  width: 60rem;
+  height: 40rem;
   background-color: white;
   text-align: center;
-  border-radius: 10px;
-  margin-right: 30px;
+  border-radius: 10rem;
 }
 
 .color {
-  display: flex;
-  align-items: center;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(5, 40rem);
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+}
+.color .colorHeading {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .colorOption {
-  width: 32px;
-  height: 32px;
-  border-radius: 5px;
-  margin: 15px;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 5rem;
   background-color: white;
 }
 .colorOption.black {
@@ -424,32 +437,219 @@ nav {
 }
 
 .amount {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 40rem);
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
   align-items: center;
+}
+.amount .amountHeading {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .amount .amountOption {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 135px;
-  height: 50px;
+  width: 135rem;
+  height: 50rem;
+  font-family: "Bellota Text", cursive;
   background-color: white;
-  border-radius: 20px;
-  font-size: 32px;
+  border-radius: 20rem;
+  font-size: 32rem;
 }
 .amount .amountOption span {
-  margin: 0 10px;
+  margin: 0 10rem;
+  cursor: pointer;
+}
+
+.selected {
+  border: 3rem solid #0085FF;
 }
 
 .cartBtn {
-  width: 540px;
-  height: 95px;
+  width: 540rem;
+  height: 95rem;
   background-color: #FF5353;
   border: none;
-  font-size: 40px;
+  font-size: 40rem;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 800;
-  border-radius: 20px;
+  border-radius: 20rem;
+}
+.cartBtn:hover {
+  background-color: black;
+  color: #FF5353;
+}
+
+.galleryMainContainer {
+  width: 100%;
+  height: 1550rem;
+}
+
+.galleryHeading {
+  height: 155rem;
+  background-color: #303234;
+  border-top: 4rem solid white;
+}
+
+.gallerySection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gallerySection .leftGallerySection {
+  display: flex;
+}
+.gallerySection .galleryHeadingText {
+  font-size: 85rem;
+  font-weight: 800;
+  height: 155rem;
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.gallerySection .galleryHeadingText img {
+  width: 80rem;
+  margin: 10rem;
+}
+
+.gallerySection1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftGallerySection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallerySubHeading {
+  font-size: 48rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  text-decoration: underline;
+  margin: 10rem;
+}
+
+.galleryParagraph {
+  font-size: 22rem;
+  font-family: "Bellota Text";
+  line-height: 52rem;
+  margin: 25rem;
+}
+
+.rightGallerySection .firstGalleryImg {
+  width: 575rem;
+  height: 690rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25rem;
+  margin: 25rem;
+  box-shadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.gallerySection2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.gallerySection2 .rightGallerySection .secondGalleryImg {
+  width: 565rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 640rem;
+  border-radius: 25rem;
+  margin: 25rem;
+  box-shadow: 10rem 4rem 20rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.footerMainContainer {
+  height: 460rem;
+  background-color: #303234;
+}
+.footerMainContainer .footerLogo img {
+  width: 100rem;
+}
+
+.footerInfoContainer {
+  display: grid;
+  height: 400rem;
+  grid-template-columns: repeat(6, 200rem);
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
+  align-content: center;
+}
+
+.footerInfo {
+  width: 375rem;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.footerInfoText {
+  color: rgb(192, 192, 192);
+  font-size: 15rem;
+  font-family: "ABeeZee", sans-serif;
+  margin-top: 30rem;
+  font-weight: 400;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.footerMeet {
+  width: 120rem;
+  height: 230rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerMeet .meetHeading {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 20rem;
+  margin: 10rem;
+  color: white;
+}
+.footerMeet .meetItems {
+  font-family: "ABeeZee", sans-serif;
+  width: 120rem;
+  font-size: 15rem;
+  margin: 10rem;
+  font-weight: 400;
+  color: rgb(192, 192, 192);
+}
+
+.followFooter {
+  width: 150rem;
+  height: 65rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.followFooter .followHeading {
+  font-size: 20rem;
+  color: white;
+  font-family: "ABeeZee", sans-serif;
+  margin-bottom: 10rem;
+}
+
+.fa-brands {
+  font-size: 25rem;
+  margin: 5rem;
+  color: rgb(192, 192, 192);
 }
 
 /*# sourceMappingURL=script.css.map */ /*# sourceMappingURL=script.css.map *//*# sourceMappingURL=script.css.map */
