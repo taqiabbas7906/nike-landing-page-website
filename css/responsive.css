@@ -34,10 +34,11 @@
     top: 80rem;
     transition: all 0.3s ease;
     width: 100vw;
-    height: 2000vw;
+    height: 100vh;
     align-items: center;
     background: rgba(0, 0, 0, 0.911);
     flex-direction: column;
+    justify-content: flex-start;
     -webkit-backdrop-filter: blur(5rem);
             backdrop-filter: blur(5rem);
   }

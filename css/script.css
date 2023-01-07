@@ -61,6 +61,9 @@ body {
   font-family: "ABeeZee", sans-serif;
   cursor: pointer;
 }
+.navCenter li a {
+  color: white;
+}
 .navCenter li:hover {
   text-decoration: underline;
 }

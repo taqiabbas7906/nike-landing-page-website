@@ -54,6 +54,8 @@ $footerTextColor :rgb(192, 192, 192);
     li {
       color: white;
       font-size: 18rem;
+      a{
+      color: white;}
       font-weight: 400;
       @include abeezee;
       &:hover{
